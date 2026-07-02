@@ -58,8 +58,8 @@
 }
 
 .auth-error {
-  background: #FCEBEB;
-  color: var(--rejected-text);
+  background: var(--error-bg);
+  color: var(--error-text);
   font-size: 13px;
   padding: 8px 12px;
   border-radius: 8px;
@@ -126,8 +126,8 @@
 }
 
 .auth-success {
-  background: #E8F5EE;
-  color: var(--offer-text);
+  background: var(--success-bg);
+  color: var(--success-text);
   font-size: 13px;
   padding: 8px 12px;
   border-radius: 8px;

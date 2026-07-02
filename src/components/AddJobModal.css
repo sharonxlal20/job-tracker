@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(34, 37, 42, 0.45);
+  background: var(--overlay);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,8 +84,8 @@
 }
 
 .auth-error {
-  background: #FCEBEB;
-  color: var(--rejected-text);
+  background: var(--error-bg);
+  color: var(--error-text);
   font-size: 13px;
   padding: 8px 12px;
   border-radius: 8px;
