@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import api from '../api/axios';
+import { useToast } from '../context/ToastContext';
 import './AddJobModal.css';
 
 function AddJobModal({ onClose, onJobAdded }) {
@@ -10,6 +11,7 @@ function AddJobModal({ onClose, onJobAdded }) {
   const [jobLocation, setJobLocation] = useState('remote');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const { showToast } = useToast();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ function AddJobModal({ onClose, onJobAdded }) {
     setLoading(true);
     try {
       await api.post('/jobs', { company, position, status, jobType, jobLocation });
+      showToast('Application added', 'success');
       onJobAdded();
     } catch (err) {
       setError(err.response?.data?.error || 'Could not add job. Try again.');

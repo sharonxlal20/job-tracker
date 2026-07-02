@@ -1,0 +1,55 @@
+.confirm-card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.confirm-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.confirm-message {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.confirm-cancel {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.confirm-cancel:hover {
+  border-color: var(--ink-muted);
+}
+
+.confirm-delete {
+  padding: 8px 16px;
+  background: var(--rejected);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.confirm-delete:hover {
+  opacity: 0.9;
+}
