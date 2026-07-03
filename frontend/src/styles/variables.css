@@ -1,0 +1,57 @@
+:root {
+  --canvas: #FBF9F3;
+  --surface: #FFFFFF;
+  --ink: #22252A;
+  --ink-muted: #6B6A66;
+  --border: #ECE7DA;
+
+  --brand: #FF5D3A;
+  --brand-dark: #D6431F;
+
+  --applied: #F2A63C;
+  --applied-text: #9A5F0E;
+  --interview: #4361EE;
+  --interview-text: #28409E;
+  --offer: #1E9E6B;
+  --offer-text: #166B49;
+  --rejected: #E4536B;
+  --rejected-text: #A33245;
+
+  --error-bg: #FCEBEB;
+  --error-text: #A33245;
+  --success-bg: #E8F5EE;
+  --success-text: #166B49;
+  --overlay: rgba(34, 37, 42, 0.45);
+
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --canvas: #1A1B1E;
+  --surface: #242528;
+  --ink: #F0EDE6;
+  --ink-muted: #9B9993;
+  --border: #35363A;
+
+  --brand: #FF6B4A;
+  --brand-dark: #FF8567;
+
+  --applied: #F2B558;
+  --applied-text: #F2B558;
+  --interview: #7C90FF;
+  --interview-text: #7C90FF;
+  --offer: #45CC94;
+  --offer-text: #45CC94;
+  --rejected: #F17F92;
+  --rejected-text: #F17F92;
+
+  --error-bg: #3A2226;
+  --error-text: #F17F92;
+  --success-bg: #1E3229;
+  --success-text: #45CC94;
+  --overlay: rgba(0, 0, 0, 0.6);
+}
